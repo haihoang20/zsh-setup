@@ -8,10 +8,10 @@ https://www.iterm2.com
 2. Press `Load Preset`
 3. Select `Natural Text Editing`
 
-### 
+### Iterm 2 Colours
+Import the `iterm2-colours.itermcolors` into `Preferences > Profile > Colors`
 
-
-### Install Zsh:
+### Install Zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
@@ -21,8 +21,26 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
+### Autosuggestions
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
 ### .zshrc
-Copy and paste the `.zshrc` file from this repo onto your computer to inhereit the configs
+```
+cp .zshrc ~/
+```
+
+### .gitconfig
+Make sure you change the name and email before using this
+```
+cp .gitconfig ~/
+```
+
+### .vimrc
+```
+cp .vimrc ~/
+```
 
 References:
 - https://medium.com/@Clovis_app/configuration-of-a-beautiful-efficient-terminal-and-prompt-on-osx-in-7-minutes-827c29391961
