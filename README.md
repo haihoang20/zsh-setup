@@ -11,6 +11,12 @@ https://www.iterm2.com
 ### Iterm 2 Colours
 Import the `iterm2-colours.itermcolors` into `Preferences > Profile > Colors`
 
+### Install SauceCodePro Nerd Font
+```
+brew tap homebrew/cask-fonts
+brew cask install font-sourcecodepro-nerd-font
+```
+
 ### Install Zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
