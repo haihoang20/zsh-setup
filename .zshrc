@@ -15,8 +15,8 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ram time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
-# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="ﲤ ﰁ  "
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="ﲤ ﰁ  "
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -112,3 +112,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias busy="cat /dev/urandom | hexdump -C | grep 'ca fe'"
 alias tf="terraform"
+alias k="kubectl"
+source <(kubectl completion zsh)
